@@ -2,7 +2,8 @@ import { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 export const CourseContext = createContext();
-const URL = 'https://your-project-id.firebaseio.com/courses.json';
+const URL = 'https://course-management-app-de336-default-rtdb.firebaseio.com/courses.json';
+
 
 export const CourseProvider = ({ children }) => {
   const [courses, setCourses] = useState([]);
